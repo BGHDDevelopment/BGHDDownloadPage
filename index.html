@@ -1,0 +1,119 @@
+<html>
+<title>Download Manager</title>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<p style="text-align: center;"></p>
+<br>
+<br>
+<p style="text-align: center;"><span style="font-size:36px;"><em><strong>Download - LuckPermsGUI</strong></em></span></p>
+<br>
+<br>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style>
+    .btn-choice-wrapper {
+        text-align: center;
+    }
+    .btn-choice {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+</style>
+<center>
+
+
+    <div class="btn-choice-wrapper">
+        <button class="btn btn-success btn-choice choice-adfly" ng-disabled="!download.url.adfly"
+                onclick="adownload()">Download & Support Us
+        </button>
+        <span class="help-block" ng-if="!adflyFailed">via adf.ly</span>
+        <span class="help-block" style="color: #ff4848;" ng-if="adflyFailed">Please disable any ad blocker to download via adf.ly</span>
+    </div>
+    <p>
+        This download method allows you to support development without donating!
+        <br/>
+        <strong>Doesn't that sound great?</strong>
+    </p>
+    </div>
+    <script>
+        function adownload()
+        {
+            location.href = "#";
+        }
+    </script>
+    <div>
+        <br/>
+        <hr/>
+        <br/>
+        <div class="btn-choice-wrapper">
+            <button class="btn btn-danger btn-choice choice-direct" ng-disabled="!download.url.direct"
+                    onclick="directdownload()">Direct Download
+            </button>
+            <span class="help-block">Takes you directly to the GitHub download page</span>
+        </div>
+        <p>
+            Feel free to directly download this plugin!.<br/>
+            However, <strong>the other method helps support development.</strong>
+        </p>
+    </div>
+    <script>
+        function directdownload()
+        {
+            location.href = "https://github.com/BGHDDevelopment/LuckPermsGUI/releases";
+        }
+    </script>
+    <div>
+        <br/>
+        <hr/>
+        <br/>
+        <div class="btn-choice-wrapper">
+            <button class="btn btn-success  btn-choice choice-direct" onclick="donate()"style="background-color: orange;">Donate</button>
+            <span class="help-block">Click to donate and support future projects!</span>
+        </div>
+        <script>
+            function donate()
+            {
+                location.href = "https://bghddevelopment.com/donate";
+            }
+        </script>
+        <p>
+            If you love this plugin and would like to support us please donate!<br/>
+            <strong>Thanks for your support!</strong>
+        </p>
+    </div>
+    <br/>
+    </div>
+</center>
+<div class="modal-footer">
+         <span class="text-muted pull-left">
+         <a href="https://bghddevelopment.com/discord" >Download not working?</a>
+         </span>
+         <span class="text-muted pull-right">
+         <a href="https://github.com/InventivetalentDev" >Orginal website design by Inventivetalent | Updated for BGHDDev by Stephan</a>
+         </span>
+</div>
+
+<footer><script data-ad-client="ca-pub-7931495525940449" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></footer>
+
+<!-- Default Statcounter code for Downloads
+   https://download.bghddevelopment.com/ -->
+<script type="text/javascript">
+    var sc_project = 12223592;
+    var sc_invisible = 1;
+    var sc_security = "a69f2611";
+    var sc_https = 1;
+    var sc_remove_link = 1;
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+    <div class="statcounter"><img class="statcounter"
+                                  src="https://c.statcounter.com/12223592/0/a69f2611/1/"
+                                  alt="Web Analytics"></div>
+</noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
